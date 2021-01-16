@@ -436,3 +436,41 @@ li a
 	display: flex;
 	justify-content: center;
 }
+/*RESPONSIVE*/
+@media (max-width: 900px) {
+	body
+	{
+		background-color: #403e5c;
+	}
+	button, a
+	{
+		width: 60vw;
+	}
+	.circle
+	{
+		display: none;
+	}
+	h2, a
+	{
+		font-size: 1em;
+		width: 100%;
+	}
+	header
+	{
+		display: block;
+		background-color: white;
+		width: 100%;
+		margin: 0px;
+	}
+	.homepage, ul
+	{
+		margin: 0px;	
+	}
+	.verticale, .nav
+	{
+		display: block;
+		position: static;
+		width: 100%;
+		display: none;
+	}
+}
