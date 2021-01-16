@@ -1,0 +1,439 @@
+/*GENERAL*/
+*
+{
+	/*cursor: url(cursor/GIF.gif), pointer;	*/
+	cursor: none;
+}
+body
+{
+	
+	background-color: #4B4976;
+	margin: 0px;
+	font-family: 'Futura';
+}
+/*GENERAL FIN*/
+/*Typographique : */
+
+@font-face
+{
+	font-family: 'Lemon Milk';
+	src: url('Police/LEMONMILK-Regular.otf') format('otf');
+}
+@font-face
+{
+	font-family: 'Futura';
+	src: url('Police/Futura.ttc') format('ttc');
+}
+strong
+{
+	font-family: 'Lemon Milk';
+}
+.myProjects
+{
+	color: white;
+}
+h2
+{
+	font-family: 'Futura';
+	font-size: 2em;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	width: 65vw;
+
+}
+h3
+{
+	margin: 0px;
+	bottom: 60px;
+	color:white;
+	font-family: 'Futura';
+
+}
+p
+{
+	font-size: 0.5em;
+	margin: 0px 10px;	
+}
+.white
+{
+	color: white;
+}
+.designer
+{
+	font-family: 'Futura';
+}
+.designer + h3
+{
+	position: absolute;
+	bottom: 80px;
+}
+h3.white
+{
+	font-size: 3vw;
+}
+.milk
+{
+	font-size: 'Lemon Milk';
+}
+/**/
+
+/*HEADER*/
+header
+{
+	position: fixed;
+	width: 40%;
+	margin-left: 8vw;
+}
+.verticale
+{
+	position: fixed;
+	top: 20vh;
+	z-index: 1;
+
+}
+.nav
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	height: 310px;
+	/*Mettre en %*/
+	background-color: rgba(255,255,255,0.8);
+	
+	width: 100px;
+	border-radius: 30px;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+	
+	z-index: 0;
+}
+.langues
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	height: 165px;
+	/*Mettre en %*/
+	background-color: rgba(255,255,255,0.8);
+	width: 100px;
+	border-radius: 30px;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.16);	
+	
+}
+ul
+{
+	padding: 0px;
+}
+ul.horizontale
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
+}
+ul.horizontale li 
+{
+	font-size: 20px;
+	color: white;
+}
+li
+{
+	font-size: 15px;
+	list-style: none;
+	font-family: 'Futura';
+	color:black;
+}
+/*HOMEPAGE*/
+.homepage
+{
+	height: 95vh;
+	width: 98vw;
+	background-color: #403E5C;
+	border-radius: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 3vh;
+	margin-bottom: 3vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.image
+{
+	display: flex;
+	height: 50vh;
+	justify-content: center;
+
+	/*position: absolute;	*/
+}
+img
+{
+	
+	height: 50vh;
+
+}
+	
+
+
+.cercle
+{
+	height: 10vh;
+	width: 10vh;
+	border-radius: 10vh;
+	background-color: #87A8EA;
+	margin: 8px;
+	
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Lemon Milk';	
+}
+.cercle:hover
+{
+	animation: Move 1s;
+}
+/*HOMEPAGE FIN*/
+/*Animations*/
+@keyframes Move
+{
+	0%
+	{
+		padding: 0px;
+	}
+	100%
+	{
+		width: 30vh;
+	}
+}
+@keyframes show {
+	from
+	{
+		display: none;
+	}
+	to
+	{
+		display: block;
+	}
+}
+
+.hvr-trim {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+.hvr-trim:before {
+  content: '';
+  position: absolute;
+  border: white solid 4px;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  opacity: 0;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.hvr-trim:hover:before, .hvr-trim:focus:before, .hvr-trim:active:before {
+  opacity: 1;
+}
+
+/*Animations fin*/
+/*Cercles*/
+.orange
+{
+	color: #FF9C39;
+	
+}
+.grey
+{
+	color: #A7A5A5;
+	
+}
+.black
+{
+	background-color: black;
+	position: relative;
+	height: 10vh;
+	left: 10vw;
+}
+.container
+{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	height: 90vh;
+		
+}
+.button
+{
+	height: 95px;
+	width: 350px;
+	border: #FF9C39 solid 1px;
+	border-radius: 15px;
+	position: absolute;
+	bottom: 120px;
+	right: auto;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family: 'Futura';
+	cursor: pointer;
+}
+
+.button:hover
+{
+	background-color: #FF9C39;
+	color: white;
+	cursor: pointer;
+}
+a
+{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	color: white;
+	font-family: 'Futura';
+
+}
+li a
+{
+	color: black;
+}
+/*Projects*/
+
+.projects
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 10vw;
+}
+.project
+{
+	width: 20vw;
+	height: 25vw;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 3em;
+	margin: 0vh 5vw 0vh 5vw;
+}
+.glist
+{
+	background-image: url('Images/glist.png');
+	background-size: cover;  
+}
+.project_line
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+.firefox
+{
+	background-image: url('Images/firefox.png');
+	background-size: cover;  
+	cursor: pointer;
+	background-color: gray;
+}
+.book
+{
+	background-image: url('Images/books.png');
+	background-size: cover; 
+}
+.none
+{
+	display: none;
+}
+@keyframes mouse
+{
+	25%
+	{
+		background: radial-gradient(circle, #000, #ffffff 10%,#403E5C 11%,#000 100%);	
+	}
+	50%
+	{
+		background: radial-gradient(circle, #000, #ffffff 20%,#403E5C 21%,#000 100%);	
+	}
+	75%
+	{
+		background: radial-gradient(circle, #000, #ffffff 40%,#403E5C 41%,#000 100%);	
+	}
+	100%
+	{
+		background: radial-gradient(circle, #000, #ffffff 50%,#403E5C 51%,#000 100%);	
+	}
+}
+.circle
+{
+	background-color: white;
+	border-radius: 50px;
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	transition-duration: 200ms;
+	transition-timing-function: ease-out;
+	pointer-events: none;
+	
+	
+	
+	
+}
+.circle:hover
+{
+	animation: mouse 1s infinite alternate;
+	width: 30px;
+	height: 30px;
+	opacity: 0.6;
+	
+
+}
+.cw
+{
+	border-radius: 50px;
+	width: 20px;
+	height: 20px;
+	
+	background-color: white;
+}
+.button:hover + .circle,.project:hover .circle 
+{
+	height: 30px;
+	width: 30px;
+	cursor: none;
+	animation: mouse 1s infinite alternate;
+}
+
+.fontcolor
+{
+	color: #403E5C;
+}
+.bar
+{
+	color: white;
+}
+.line
+{
+	display: flex;
+	justify-content: center;
+}
