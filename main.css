@@ -348,15 +348,20 @@ li a
 }
 .firefox
 {
-	background-image: url('Images/firefox.png');
+	background-image: url('Images/Firefox1.jpg');
 	background-size: cover;  
 	cursor: pointer;
 	background-color: gray;
 }
 .book
 {
-	background-image: url('Images/books.png');
+	background-image: url('Images/books.jpg');
 	background-size: cover; 
+}
+.greenital
+{
+	background-image: url('Projects/greenital/images/Image.svg');
+	background-size: cover;
 }
 .none
 {
@@ -436,15 +441,28 @@ li a
 	display: flex;
 	justify-content: center;
 }
+input:checked + nav
+{
+	display: block;	
+} 
+input:checked + .fauxHeader
+{
+	height: 500px;
+}
+label
+{
+	display: none;
+}
 /*RESPONSIVE*/
-@media (max-width: 900px) {
+@media (max-width: 980px) {
 	body
 	{
 		background-color: #403e5c;
 	}
-	button, a
+	.button, a
 	{
 		width: 60vw;
+		margin: 0px auto;
 	}
 	.circle
 	{
@@ -454,6 +472,7 @@ li a
 	{
 		font-size: 1em;
 		width: 100%;
+		text-align: center;
 	}
 	header
 	{
@@ -462,15 +481,40 @@ li a
 		width: 100%;
 		margin: 0px;
 	}
-	.homepage, ul
+	ul.horizontale
 	{
-		margin: 0px;	
+		width: 100%;
+		margin: 0px;
+		display: block;	
+		color: black;
 	}
-	.verticale, .nav
+	.verticale, nav
 	{
 		display: block;
 		position: static;
 		width: 100%;
 		display: none;
+	}
+	ul.horizontale li
+	{
+		display: block;
+		width: 100%;
+		color: black;
+		text-align: center;
+		height: 60px;
+	}
+	label
+	{
+		display: block;
+		font-size: 40px;
+		float:right;
+	}
+	input
+	{
+		display: none;
+	}
+	input:checked + nav 
+	{
+		display: inline-block;
 	}
 }
