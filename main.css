@@ -518,3 +518,7 @@ label
 		display: inline-block;
 	}
 }
+input
+{
+	display: none;
+}
