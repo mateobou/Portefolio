@@ -1,0 +1,124 @@
+/*General*/
+body
+{
+    background-color: black;
+}
+/*Header*/
+header
+{
+    height: 110px;
+}
+nav
+{
+    width: 80%;
+}
+/*Typo*/
+span.title
+{
+    color: #7fbf50;
+    font-size: 60px;
+}
+.title 
+{
+    font-family: 'Futura';
+    color: #d4d8d1;
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 8%;
+}
+h1, h2,h3, p
+{
+    font-family: 'Futura';
+    color: white;
+}
+h1
+{
+    font-weight: bold;
+    font-size: 40px;
+}
+h2, h3, p 
+{
+    font-family: 'Roboto', sans-serif;
+}
+p
+{
+    font-size: 15px;
+}
+.l50 p 
+{
+    width: 70%;
+}
+button
+{
+    width: 25%;
+    height: 4vh;
+    background-color: #7FBF50;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+/*DIV*/
+.l50#img
+{
+    width: 50%;
+}
+.l50#txt
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.bloc_text
+{
+    width: 70%;
+}
+.line
+{
+    width: 100%;
+    display: flex;
+}
+#img1
+{
+    height: 100px;
+    animation: flot 3s infinite alternate;
+    
+}
+#img2
+{
+    height: 100px;
+    animation: flot 3s infinite alternate;
+    
+}
+#img3
+{
+    height: 100px;
+    animation: flot 3s infinite alternate;
+     
+}
+/*Animations*/
+@keyframes flot{
+    from
+    {
+        margin-bottom: 0px;
+    }  
+    to
+    {
+        margin-bottom: 40px;
+        height: 120px;
+    }
+}
+/*Img*/
+img 
+{
+    height: 40vh;
+}
+.ml2 {
+    font-weight: 900;
+    font-size: 3.5em;
+  }
+  
+  .ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }

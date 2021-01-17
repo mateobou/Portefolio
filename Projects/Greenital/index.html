@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script src="src/js/baffle.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="title m12"><span class="title">.</span>greenital</h1>
+        </header>
+        <section id="greenital">
+            <div class="line">
+                <div class="l50" id="txt">
+                    <div class="bloc_text">
+                    <h1 id="title">Impact Numérique</h1>
+                    <h2 id="title2">Quel est votre impact numérique ?</h2>
+                    <p class="baffle">La fabrication de nos appareils/infrastructures  numériques représentent 3 à 4% des gaz à effet de serre  mondiaux ! C'est plus que le domaine de l'aviation.</p>
+                    <button id="buttonText">En savoir plus</button>
+                    </div>
+                </div>
+                <div class="l50" id="img">
+                    <!--<img src="Images/computer.svg" id="img1">-->
+                    <!--<img src="Images/house.svg" id="img2">-->
+                    <!--<img src="Images/datacenter.svg" id="img3">-->
+                    <img src="Images/Image.svg">
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
+<script src="src/js/baffle.min.js"></script>
+<script>
+    
+        p = baffle('.baffle');
+        h2 = baffle("#title");
+        h22 = baffle('#title2');
+        buttonText = baffle('#buttonText');
+        
+
+        //b.start();
+        // Take care of some other stuff.
+        
+            // Swap in new text and reveal over 1500ms.
+        p.reveal(1500);
+        h2.reveal(1500);
+        h22.reveal(1500);
+        buttonText.reveal(1500);
+        // Wrap every letter in a span
+        const textWrapper = document.querySelector('.ml2');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: true})
+        .add({
+            targets: '.ml2 .letter',
+            scale: [4,1],
+            opacity: [0,1],
+            translateZ: 0,
+            easing: "easeOutExpo",
+            duration: 950,
+            delay: (el, i) => 70*i
+        }).add({
+            targets: '.ml2',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+        });
+        
+    
+
+    
+</script>
