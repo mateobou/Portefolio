@@ -1,11 +1,48 @@
+let langue = 'FR';
+const fr = document.getElementById('fr');
+const en = document.getElementById('en');
+const es = document.getElementById('es');
+const Langues = [fr,es,en];
+for( let i = 0; i < Langues.length; i++)
+{
+  Langues[i].addEventListener('click', (e)=>{
+	langue = e.target.textContent;
+	langue === 'FR' ? phraseEntière = phraseEntièreFr : console.log(langue);
+  	langue === 'EN' ? phraseEntière = phraseEntièreEn : console.log(langue);
+  	langue === 'ES' ? phraseEntière = phraseEntièreEs : console.log(langue);
+	for(let i = 0; i < phraseEntière.length; i++)
+	{
+		console.log(phraseEntière[i][1]);
+		phraseEntière[i][1].textContent = phraseEntière[i][0];
+	}
+  })
+}
 //Variables phrases
-const texte  = "Hello";
 const phrase = "Hey, I’m ";
 const orange = "Matéo Boukhobza "
 const phrase2 = "and I’m a front developer. "
 const phrase3 = " My challenge : "
 const grey = "create an object that you will use ";
 const phrase4 = "I’m a maker before all.";
+
+//Variables phrases fr
+const texteFr  = "Hello";
+const phraseFr = "Hey, Je m'appelle ";
+const orangeFr = "Matéo Boukhobza "
+const phrase2Fr = "et je suis un front developpeur. "
+const phrase3Fr = " Mon défi : "
+const greyFr = "créer un objet que vous allez utiliser";
+const phrase4Fr = "Je suis un créateur avant tout.";
+
+//Variables phrases fr
+const texteEs  = "Hola";
+const phraseEs = "Me llamo ";
+const orangeEs = "Matéo Boukhobza "
+const phrase2Es = "y soy un front developer "
+const phrase3Es = " mi desafio"
+const greyEs = "crear un objecto que vas usar";
+const phrase4Es = "Soy un creator antes todo.";
+
 
 
 //DOM
@@ -20,7 +57,7 @@ const elGrey = document.querySelector('#grey');
 const elPhrase4 = document.querySelector('#phrase4');
 
 //tableaux 
-const phraseEntière = 
+const phraseEntièreEn = 
 [
 	[phrase, elPhrase],
 	[orange, elOrange],
@@ -28,6 +65,24 @@ const phraseEntière =
 	[phrase3, elPhrase3],
 	[grey, elGrey],
 	[phrase4, elPhrase4]
+]
+const phraseEntièreFr = 
+[
+	[phraseFr, elPhrase],
+	[orangeFr, elOrange],
+	[phrase2Fr, elPhrase2],
+	[phrase3Fr, elPhrase3],
+	[greyFr, elGrey],
+	[phrase4Fr, elPhrase4]
+]
+const phraseEntièreEs = 
+[
+	[phraseEs, elPhrase],
+	[orangeEs, elOrange],
+	[phrase2Es, elPhrase2],
+	[phrase3Es, elPhrase3],
+	[greyEs, elGrey],
+	[phrase4Es, elPhrase4]
 ]
 
 //Events
@@ -57,6 +112,10 @@ function timedCount() {
   
   c = c + 1;
   clignoter();
+  langue === 'FR' ? phraseEntière = phraseEntièreFr : console.log(langue);
+  langue === 'EN' ? phraseEntière = phraseEntièreEn : console.log(langue);
+  langue === 'ES' ? phraseEntière = phraseEntièreEs : console.log(langue);
+  console.log(phraseEntière);
   phraseEntière[nbTxt][1].textContent += phraseEntière[nbTxt][0][numLettre];
   phraseEntière[nbTxt][0].length -1 === numLettre ? test() : numLettre++;
   phraseEntière[nbTxt][0].length -1 === numLettre && nbTxt === phraseEntière.length ? mouseCursor.classList.toggle('none') : console.log('hello');
