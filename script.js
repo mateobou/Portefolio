@@ -94,7 +94,7 @@ function clignoter() {
 		console.log('hello');
 		bar.classList.toggle('fontcolor');
 		bar.classList.toggle('bar');
-	}, 100);
+	}, 75);
 } 
 var c = 0;
 var t;
@@ -120,7 +120,7 @@ function timedCount() {
   phraseEntière[nbTxt][0].length -1 === numLettre ? test() : numLettre++;
   phraseEntière[nbTxt][0].length -1 === numLettre && nbTxt === phraseEntière.length ? mouseCursor.classList.toggle('none') : console.log('hello');
 
-  t = setTimeout(timedCount, 100);
+  t = setTimeout(timedCount, 75);
   console.log(phrase[c]);
   
 }
