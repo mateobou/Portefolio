@@ -1,4 +1,4 @@
-let langue = 'FR';
+let langue = 'EN';
 const fr = document.getElementById('fr');
 const en = document.getElementById('en');
 const es = document.getElementById('es');
@@ -14,7 +14,13 @@ for( let i = 0; i < Langues.length; i++)
 	{
 		console.log(phraseEntière[i][1]);
 		phraseEntière[i][1].textContent = phraseEntière[i][0];
+		for (let k = 0; k < Langues.length; k++)
+		{
+			Langues[k].classList.remove('selected');		
+		}
+		
 	}
+	e.target.classList.add('selected');
   })
 }
 //Variables phrases

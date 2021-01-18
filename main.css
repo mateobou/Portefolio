@@ -525,3 +525,8 @@ input
 {
 	display: none;
 }
+.selected
+{
+	color: black;
+	font-weight: bold;
+}
