@@ -2,14 +2,32 @@ let langue = 'EN';
 const fr = document.getElementById('fr');
 const en = document.getElementById('en');
 const es = document.getElementById('es');
+const about = document.getElementById('about');
+const contact = document.getElementById('contact');
 const Langues = [fr,es,en];
+const headerFr = ['À propos de moi', 'Me contacter']
+const headerEn = ['about me', 'contact me']
+const headerEs = ['Sobre me', 'Contáctame']
 for( let i = 0; i < Langues.length; i++)
 {
   Langues[i].addEventListener('click', (e)=>{
 	langue = e.target.textContent;
-	langue === 'FR' ? phraseEntière = phraseEntièreFr : console.log(langue);
-  	langue === 'EN' ? phraseEntière = phraseEntièreEn : console.log(langue);
-  	langue === 'ES' ? phraseEntière = phraseEntièreEs : console.log(langue);
+	if (langue === 'FR'){
+		phraseEntière = phraseEntièreFr;
+		about.textContent = "À propos"
+		contact.textContent = "Me contacter"
+	}
+	if (langue === 'ES'){
+		phraseEntière = phraseEntièreEs;
+		about.textContent = "Sobre me";
+		contact.textContent = "Contáctame";
+	}
+	if (langue === 'EN'){
+		phraseEntière = phraseEntièreEs;
+		about.textContent = "about me";
+		contact.textContent = "contact me";
+	}
+	
 	for(let i = 0; i < phraseEntière.length; i++)
 	{
 		console.log(phraseEntière[i][1]);
@@ -26,7 +44,7 @@ for( let i = 0; i < Langues.length; i++)
 //Variables phrases
 const phrase = "Hey, I’m ";
 const orange = "Matéo Boukhobza "
-const phrase2 = "and I’m a front developer. "
+const phrase2 = "and I’m a student. "
 const phrase3 = " My challenge : "
 const grey = "create an object that you will use ";
 const phrase4 = "I’m a maker before all.";
@@ -35,7 +53,7 @@ const phrase4 = "I’m a maker before all.";
 const texteFr  = "Hello";
 const phraseFr = "Hey, Je m'appelle ";
 const orangeFr = "Matéo Boukhobza "
-const phrase2Fr = "et je suis un front developpeur. "
+const phrase2Fr = "et je suis un étudiant. "
 const phrase3Fr = " Mon défi : "
 const greyFr = "créer un objet que vous allez utiliser. ";
 const phrase4Fr = " Je suis un créateur avant tout. ";
@@ -44,7 +62,7 @@ const phrase4Fr = " Je suis un créateur avant tout. ";
 const texteEs  = "Hola ";
 const phraseEs = "Me llamo ";
 const orangeEs = "Matéo Boukhobza "
-const phrase2Es = "y soy un front developer "
+const phrase2Es = "y soy un estudiante "
 const phrase3Es = " mi desafio "
 const greyEs = "crear un objecto que vas usar ";
 const phrase4Es = "Soy un creator antes todo. ";
