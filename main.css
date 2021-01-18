@@ -306,7 +306,10 @@ a
 	text-decoration: none;
 	color: white;
 	font-family: 'Futura';
-
+}
+#en, #fr, #es
+{
+	cursor: pointer;
 }
 li a
 {
