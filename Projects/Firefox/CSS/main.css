@@ -72,8 +72,7 @@ body
 }
 input:checked + nav
 {
-	display: block;
-	
+	display: block;	
 } 
 input:checked + .fauxHeader
 {
@@ -922,11 +921,6 @@ h2, h3
 	{
 		display: none;
 	}
-	.line:hover
-	{
-		
-
-	}
 	.column_part1, .column, .left
 	{
 		display: flex;
@@ -945,10 +939,6 @@ h2, h3
 	.paragraph2
 	{
 		width: 60vw;
-	}
-	.pright10vw,.pleft10vw
-	{
-		/*padding: 0px;*/
 	}
 	.pleft10vw, .button
 	{
@@ -1039,8 +1029,12 @@ h2, h3
 		scroll-snap-align: initial;
 	}
 	#round
-{
-	display: none;
-}
+	{
+		display: none;
+	}
+	.Round_3
+	{
+		margin: auto auto;
+	}
 	
 
