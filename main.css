@@ -297,7 +297,7 @@ img
 {
 	background-color: #FF9C39;
 	color: white;
-	cursor: pointer;
+	
 }
 a
 {
@@ -307,10 +307,7 @@ a
 	color: white;
 	font-family: 'Futura';
 }
-#en, #fr, #es
-{
-	cursor: pointer;
-}
+
 li a
 {
 	color: black;
@@ -353,7 +350,6 @@ li a
 {
 	background-image: url('Images/Firefox1.jpg');
 	background-size: cover;  
-	cursor: pointer;
 	background-color: gray;
 }
 .book
@@ -412,8 +408,6 @@ li a
 	width: 30px;
 	height: 30px;
 	opacity: 0.6;
-	
-
 }
 .cw
 {
@@ -423,7 +417,7 @@ li a
 	
 	background-color: white;
 }
-.button:hover + .circle,.project:hover .circle 
+button:hover + .circle,.project:hover .circle 
 {
 	height: 30px;
 	width: 30px;
@@ -529,4 +523,7 @@ input
 {
 	color: black;
 	font-weight: bold;
+}
+.hov{
+	animation: mouse 1s infinite alternate;
 }
