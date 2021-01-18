@@ -37,17 +37,17 @@ const phraseFr = "Hey, Je m'appelle ";
 const orangeFr = "Matéo Boukhobza "
 const phrase2Fr = "et je suis un front developpeur. "
 const phrase3Fr = " Mon défi : "
-const greyFr = "créer un objet que vous allez utiliser";
-const phrase4Fr = "Je suis un créateur avant tout.";
+const greyFr = "créer un objet que vous allez utiliser. ";
+const phrase4Fr = " Je suis un créateur avant tout. ";
 
 //Variables phrases fr
-const texteEs  = "Hola";
+const texteEs  = "Hola ";
 const phraseEs = "Me llamo ";
 const orangeEs = "Matéo Boukhobza "
 const phrase2Es = "y soy un front developer "
-const phrase3Es = " mi desafio"
-const greyEs = "crear un objecto que vas usar";
-const phrase4Es = "Soy un creator antes todo.";
+const phrase3Es = " mi desafio "
+const greyEs = "crear un objecto que vas usar ";
+const phrase4Es = "Soy un creator antes todo. ";
 
 
 
